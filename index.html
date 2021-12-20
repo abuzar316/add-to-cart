@@ -20,7 +20,7 @@
 
         }nav ul> li a:hover{color: #fff;background: #000;}
         .down-box{
-            width: 400px;
+            width: 350px;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             position: absolute;
             transform: translate(-40%,0);
@@ -43,6 +43,11 @@
         .icon-delete:hover{color: red;}
         .total-cart{padding: 5px 0;}
         .total-cart h2{text-align: center;}
+        @media(max-width:500px){
+            .col-sm-12{
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -75,7 +80,7 @@
              ]
             
         data.forEach((x , y)=>{
-            card = `<div class="col-4">
+            card = `<div class="col-4 col-sm-12">
                        <div>
                             <img src="${data[y].url}" alt="">
                             <div>
